@@ -30,7 +30,6 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src="./src/assets/gif.GIF"/>
 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBrc2UwMmtiNHBhaTR2eTY2NzJyb21mZXczaGdqem44cndrbjV2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WwvcJDiMH1gwHXDart/giphy.gif"/>
 
 <!-- Replace this with whatever GIF tool you used! -->
