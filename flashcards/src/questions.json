@@ -74,5 +74,10 @@
         "answer": "Clowder",
         "difficulty": "hard",
         "image": "https://meowkai.com/wp-content/uploads/2021/02/groups-of-cats.jpg"
+    },
+    {
+        "question": "The first cat ever launched into space was named _______",
+        "answer": "Félicette",
+        "difficulty": "hard"
     }
 ]

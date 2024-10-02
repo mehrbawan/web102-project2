@@ -9,11 +9,11 @@ const Card = ({ question, flipped, setFlipped }) => {
         <div className="cardContainer" id={question.difficulty} onClick={flipCard}>
             {flipped ? (
                 <>
-                    <p>{question.answer}</p>
+                    <b><p>{question.answer}</p></b>
                 </>
             ) : (
                 <>
-                    <p>{question.question}</p>
+                    <b><p>{question.question}</p></b>
                     {question.image && <img className="questionImage" src={question.image} />}
                 </>
             )}

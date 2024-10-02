@@ -4,37 +4,35 @@ import Card from './Card.jsx';
 import questions from './questions.json'; // Import the JSON file
 
 const App = () => {
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [flipped, setFlipped] = useState(false); // Track flipped state in App
+  const [currentCardIndex, setCurrentCardIndex] = useState(0); // Initial card is the first one
+  const [flipped, setFlipped] = useState(false); // State to track flipped status
 
-  const nextCard = () => {
-    setFlipped(false); // Unflip the card when going to the next card
-    setCurrentCardIndex((prevIndex) =>
-      prevIndex < questions.length - 1 ? prevIndex + 1 : 0 // Loop to first question when end is reached
-    );
-  };
+  // Generate a random card index
+  const getRandomCard = () => {
+    let randomIndex;
+    // Keep generating a new index until it's different from the current card
+    do {
+      randomIndex = Math.floor(Math.random() * questions.length);
+    } while (randomIndex === currentCardIndex); // Prevent the same card from showing twice in a row
 
-  const prevCard = () => {
-    setFlipped(false); // Unflip the card when going to the previous card
-    setCurrentCardIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : questions.length - 1 // Go to last question when at the start
-    );
+    setCurrentCardIndex(randomIndex);
+    setFlipped(false); // Unflip the card when switching to a new card
   };
 
   return (
-    <div className="App">
+    <div className="App"><center>
+      <img src="https://cdn-icons-png.freepik.com/256/6988/6988878.png?semt=ais_hybrid" height="150px"></img>
       <h1>Cat Trivia</h1>
-      <h2>Test your knowledge on all things cat!</h2>
-      <Card
-        question={questions[currentCardIndex]}
-        flipped={flipped}
-        setFlipped={setFlipped} // Pass down the flip state and updater
+      <h2>Test your knowledge on all things cat with these 15 trivia flashcards!</h2>
+      <Card 
+        question={questions[currentCardIndex]} 
+        flipped={flipped} 
+        setFlipped={setFlipped} 
       />
       <br></br>
-      <div><button onClick={prevCard}>←</button><button onClick={nextCard}>→</button></div>
-
-    </div>
-  )
-}
+      <button className='button' onClick={getRandomCard}>Next</button>
+    </center></div>
+  );
+};
 
 export default App;
