@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cardContainer {
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+  height: 300px;
+  width: 550px;
+  background-color: white;
+  color: black;
+  vertical-align: middle;
+  align-items: center;
+  border-width: 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 100px;
+}
+
+.questionImage {
+  height: 200px;
+}
+
+body {
+  background-color: rgb(245, 211, 211);
+
+}
+
+#easy {
+  border-color: #4aaf54d9
+}
+
+#medium {
+  border-color: #f2dc79d9
+}
+
+#hard {
+  border-color: #bb222ad9
+}
