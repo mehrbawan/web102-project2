@@ -42,10 +42,11 @@ GIF created with Quicktime Player, Giphy, and ImgPlay
 ## Notes
 
 Describe any challenges encountered while building the app.
+Not many this time. A bit of confusion with useState that was resolved.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2024] [Mehr Awan]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
